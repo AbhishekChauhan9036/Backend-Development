@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    text-align: center;
+    margin: 150px;
+    width: 40%;
+    border: 15px solid blueviolet;
+    padding: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+h3{
+    color: gray;
+}
+
+.joke{
+    font-weight: 10px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.btn{
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    margin: 15px;
+    padding: 15px;
+    width: 180px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn:hover {
+    background-color:#002ead;
+    transition: 0.7s;
+}
