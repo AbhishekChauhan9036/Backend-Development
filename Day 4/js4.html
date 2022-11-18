@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>JS 4- more on Funcitons</title>
+</head>
+<body>
+
+    <a href="https://www.facebook.com" name="fb" > FB </a>
+    <br/>
+    <a href="https://www.google.com" name="ggl"  > google </a>
+    <br/>
+    <a href="https://www.amazon.in" name="amz"> Amazon </a>
+    <br/>
+
+    <div id="californium"> </div>
+
+    <script>
+        function myCoolFunction() {
+            //.length typically gives count of the quantity
+            var noOfLinks= document.anchors.length
+            return noOfLinks
+        }
+        document.getElementById("californium").innerHTML= myCoolFunction()
+
+    </script>
+
+</body>
+</html>

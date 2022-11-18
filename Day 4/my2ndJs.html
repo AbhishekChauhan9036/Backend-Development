@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> 2nd JS file</title>
+
+  
+</head>
+
+<body>
+    <div id="xyz"> Something something</div>
+
+    <p id="pqr"> 
+        kuch falana falana.
+    </p>
+
+    <script>
+        //innnerHTML will always REPLACE content and not add or fuse or concat 
+        document.getElementById("xyz").innerHTML = "Hi there. Old content has been replaced by me <br/> "
+
+        // document.getElementById("pqr").innerHTML = 5 + 3 + "hi" //53hi 8hi
+
+        var str = "I have started learning Js- one of the most powerful languages of the web" 
+        
+        document.getElementById("pqr").innerHTML = document.getElementById("pqr").innerHTML + str 
+        
+    </script>
+   
+</body>
+
+</html>

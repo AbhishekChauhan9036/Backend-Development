@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+
+    <script>
+        function convertToRs( ourCoolForm ){
+            ourCoolForm.Rs.value = ourCoolForm.Dlr.value * 80
+        }
+
+        function convertTo$( ourCoolForm ){
+            ourCoolForm.Dlr.value= ourCoolForm.Rs.value / 80
+        }
+    </script>
+
+</head>
+<body>
+    <h1> Converting Ruppees -- Dollars</h1>
+   
+    <form>
+        Enter $: <input name="Dlr" type="text">
+        <br/>
+        <br/>
+
+        <input type="button" name="d2r" value="convert $ to Rs" onclick="convertToRs(this.form)">
+
+        <input type="button" name="r2d" value="Convert Rs to $" onclick="convertTo$(this.form)">
+        <br/>
+        <br/>
+
+
+        Enter Rs: <input name="Rs" type="text">
+        <br/>
+
+    </form>
+
+</body>
+</html>
