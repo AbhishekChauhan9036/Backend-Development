@@ -58,3 +58,4 @@ let str="I am Boy"
 let ans=str.split("").join(" ")
 
 console.log(ans)
+
