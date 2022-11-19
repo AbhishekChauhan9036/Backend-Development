@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Document</title>
+ <script>
+   function falana(){
+// querySelector() : returns the FIRST element that matches CLASS(start with .) or ID(start with #) or TAG(juz write the tag name) // to return all matching use querySelectorAll() - later (after we know the concept of array)
+// document.querySelector("#C").innerHTML= "changed the id=C paragraph" // document.querySelector(".example").innerHTML = "changed by class name"
+      document.querySelector("h1").innerHTML = "changed by TAG name"
+      document.querySelector("#B").style.backgroundColor= "pink" 
+      document.querySelector(".example").style.backgroundColor="blue"
+      document.querySelector("body").style.backgroundColor= "yellow"
+   }
+  </script>
+</head>
+<body>
+ <h1> I am h1 heading </h1>
+ <p id="A" class="example"> I am a para with id="A" and class ="example"</p>
+ <p id="B" class="example"> I am a para with id="B" and class ="example"</p>
+ <p id="C" class="example"> I am a para with id="C" and class ="example"</p>
+ <div onclick="falana()"> Click me to Change </div>
+ <br/>
+</body>
+</html> 
+
