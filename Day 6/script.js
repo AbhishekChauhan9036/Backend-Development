@@ -52,7 +52,7 @@ function myFunc(theArr) {
 
 
 // Strings....................................................................
-let str="I am Boy"
+let str="I am Girl"
 // let ans=str.slice(-3)
 // let ans=str.replace("I   am","We")
 let ans=str.split("").join(" ")
