@@ -49,7 +49,7 @@ for(let i=1;i<=50;i++){
             break;
         }
     }
-
+    
     if(check==0 && i>1){
         console.log(i);
     }
