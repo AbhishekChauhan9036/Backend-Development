@@ -31,17 +31,6 @@
 
 // console.log(myNaem%);
 
-
-
-// // **********************************************************************
-
-// // 👉 // 🤩 SUBSCRIBE TO THAPA TECHNICAL YOUTUBE CHANNEL 🤩
-//  👉 // 🤩  https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA
-
-// // **********************************************************************
-
-
-
 /**** Section 4👉 Data Types in JavaScript ****/
 
 
@@ -290,12 +279,6 @@
 // console.log(!true);
 
 
-// // **********************************************************************
-
-// // 👉 // 🤩 SUBSCRIBE TO THAPA TECHNICAL YOUTUBE CHANNEL 🤩
-//  👉 // 🤩  https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA
-
-// // **********************************************************************
 
 
 
@@ -630,14 +613,6 @@
 // sum(20,30);
 // sum(50,50);
 // sum(5,6)
-
-
-// // **********************************************************************
-
-// // 👉 // 🤩 SUBSCRIBE TO THAPA TECHNICAL YOUTUBE CHANNEL 🤩
-//  👉 // 🤩  https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA
-
-// // **********************************************************************
 
 
 
@@ -1119,16 +1094,6 @@
 
 
 
-// // **********************************************************************
-
-// // 👉 // 🤩 SUBSCRIBE TO THAPA TECHNICAL YOUTUBE CHANNEL 🤩
-//  👉 // 🤩  https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA
-
-// // **********************************************************************
-
-
-
-
 // Array.prototype.findIndex() 🙋‍♂️
 
 // Returns the found index in the array, if an element in the 
@@ -1233,8 +1198,6 @@
 // });
 
 // console.log(array1);
-
-
 
 
 
@@ -1398,16 +1361,6 @@
 // It return new array without mutating the orignal array 
 
 
-// // **********************************************************************
-
-// // 👉 // 🤩 SUBSCRIBE TO THAPA TECHNICAL YOUTUBE CHANNEL 🤩
-//  👉 // 🤩  https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA
-
-// // **********************************************************************
-
-
-
-
 
 // 😀9: challenge Time 🏁
 
@@ -1541,10 +1494,6 @@
 
 
 
-
-
-
-
 // 👉 Finding a String in a String
 
 // String.prototype.indexOf(searchValue [, fromIndex]) 🙋‍♂️
@@ -1575,15 +1524,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 // 👉 Searching for a String in a String
 
 // String.prototype.search(regexp) 🙋‍♂️
@@ -1598,8 +1538,6 @@
 
 
 // The search() method cannot take a second start position argument.
-
-
 
 
 // 👉 Extracting String Parts
@@ -1650,8 +1588,6 @@
 
 
 
-
-
 // The substring() Method 🙋‍♂️
 // substring() is similar to slice().
 
@@ -1680,9 +1616,6 @@
 // // let res = str.substr(7,-2);
 // let res = str.substr(-4);
 // console.log(res);
-
-
-
 
 
 
@@ -1731,12 +1664,6 @@
 // let str = "HELLO WORLD";
 
 // console.log(str.charAt(9));
-
-
-
-
-
-
 
 
 
@@ -2096,17 +2023,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 // Section 10👉 Document Object model in JavaScript 
 
 // 1️⃣ Window is the main container or we can say the 
@@ -2116,15 +2032,6 @@
 // For ex 👉 the history or to find the url etc.
 
 // 1️⃣ whereas the DOM is the child of Window Object
-
-
-// // **********************************************************************
-
-// // 👉 // 🤩 SUBSCRIBE TO THAPA TECHNICAL YOUTUBE CHANNEL 🤩
-//  👉 // 🤩  https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA
-
-// // **********************************************************************
-
 
 
 // 2️⃣ All the members like objects, methods or properties. 
@@ -2720,12 +2627,7 @@
 
 // sum(5)(3)(8);
 
-// // **********************************************************************
 
-// // 👉 // 🤩 SUBSCRIBE TO THAPA TECHNICAL YOUTUBE CHANNEL 🤩
-//  👉 // 🤩  https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA
-
-// // **********************************************************************
 
 
 
