@@ -68,3 +68,16 @@ function simpleMultiplication(number) {
     }
   return number*9;
 }
+
+
+
+
+
+// 9th Solution........................................................
+function abbrevName(name){
+  const arrrrr= name.split(" ");
+   let aa=arrrrr[0];
+   let bb=arrrrr[1];
+   let ans=aa.charAt(0).toUpperCase()+'.'+bb.charAt(0).toUpperCase();
+   return ans;
+ }
