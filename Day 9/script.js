@@ -29,3 +29,42 @@ https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3/train/javascript (split t
 https://www.codewars.com/kata/53da6d8d112bd1a0dc00008b/train/javascript (use array pop push 
 */
 
+
+// 5th Solution........................................................
+function getAverage(marks){
+    let sum=0;
+    let lent=marks.length;
+    for(let i=0;i<marks.length;i++){
+      sum+=marks[i];
+    }
+    
+    return  Math.floor(sum/lent)
+  }
+
+
+
+
+// 7th Solution........................................................
+class SmallestIntegerFinder {
+    findSmallestInt(arr) {
+      let mini=arr[0]
+      for(let i=0;i<arr.length;i++){
+        if(arr[i]<mini){
+          mini=arr[i]
+        }
+      }
+      return mini;
+    }
+  }
+
+// 8th Solution........................................................
+function simpleMultiplication(number) {
+    // your code........
+   
+  if(number%2===0)
+    {
+      return number*8;
+    }
+  return number*9;
+  
+}
