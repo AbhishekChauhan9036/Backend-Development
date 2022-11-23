@@ -1,4 +1,6 @@
 /*
+
+link:-  https://docs.google.com/document/d/1l6zWNT_lhIM4cEiaPMwrRxqPaUlUxZ6yEhvAhbDbnBo/edit#
 Kata problems:
 SET 1
 https://www.codewars.com/kata/544675c6f971f7399a000e79/train/javascript 
