@@ -30,6 +30,61 @@ https://www.codewars.com/kata/53da6d8d112bd1a0dc00008b/train/javascript (use arr
 */
 
 
+
+
+// 1st Solution........................................................
+const stringToNumber = function(str){
+  return Number(str);
+}
+
+
+
+
+
+// 2nd Solution........................................................
+function positiveSum(arr) {
+  let sum=0;
+  for(let i=0;i<arr.length;i++){
+    if(arr[i]>0){
+      sum+=arr[i];
+    }
+  }
+  return sum;
+}
+
+
+
+
+// 3rd Solution........................................................
+function testEven(n) {
+if(n%2===0){
+  return true;
+}
+return false;
+}
+
+
+
+
+
+// 4th Solution........................................................
+function updateLight(current) {
+  let str="";
+  if(current==="green"){
+    str="yellow";
+  }else if(current==="yellow"){
+    str="red";
+  }else if(current==="red"){
+    str="green"
+  }
+ return str;
+}
+
+
+
+
+
+
 // 5th Solution........................................................
 function getAverage(marks){
     let sum=0;
@@ -41,6 +96,17 @@ function getAverage(marks){
     return  Math.floor(sum/lent)
   }
 
+
+
+// 6th Solution........................................................
+  function removeChar(str){
+   str.split('');
+   let ans="";
+     for(let i=1;i<str.length-1;i++){
+       ans+=str[i];
+     }
+     return ans;
+   };
 
 
 
@@ -81,3 +147,16 @@ function abbrevName(name){
    let ans=aa.charAt(0).toUpperCase()+'.'+bb.charAt(0).toUpperCase();
    return ans;
  }
+
+
+
+
+
+ // 10th Solution........................................................
+ function reverseList(list) {
+  let arr=[];
+  for(let i=0;i<list.length;i++){
+    arr.push(list[list.length-i-1])
+  }
+  return arr;
+}
