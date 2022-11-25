@@ -18,7 +18,7 @@ function Solution_1(num){
             console.log("d");
         }
 }
-// Solution_1(11);
+// Solution_1(16);
 
 
 
@@ -100,7 +100,7 @@ depending whether the value in the above variable is leap year or not*/
 function Solution_6(year){
   return year % 100 === 0 ? year % 400 === 0 : year % 4 === 0;
 }
-// console.log(Solution_6(2001));
+// console.log(Solution_6(2000));
 
 
 
@@ -132,7 +132,7 @@ Also handle edge cases
 (in real world, these two numbers will be supplied by the users.
 Now think what if they supply something which is not a number ?)*/
 function Solution_8(a,b){
-  if(isNaN(a) && isNaN(b)){
+  if(isNaN(a) || isNaN(b)){
     return "Please enter a Valid Number";
   }
   else if(a===50 || b===50 || (a+b)===50){
@@ -140,7 +140,7 @@ function Solution_8(a,b){
   }
   return false;
 }
-// console.log(Solution_8(7,30));
+// console.log(Solution_8("h",30));
 
 
 
@@ -157,7 +157,7 @@ function Solution_9(num){
     }
     return false;
 }
-// console.log(Solution_9(250));
+// console.log(Solution_9(120));
 
 
 

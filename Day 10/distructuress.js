@@ -26,7 +26,7 @@ const morePlaces = ['kochi', 'hyderabad', 'Shimla', 'Srinagar']
 // console.log(morePlaces);
 
 
-// ============================================================================= //
+// ============================================================================= .//
 // 3.
 // take out last three element from the morePlacesArray and take out first three elements from the places array 
 // and print the combined array
@@ -52,6 +52,7 @@ const myData = {
 // 4.
 // destructure and store pincode into a variable named myPincode
 myData.address.myPinCode=221716;
+// console.log(myData);
 
 // 5.
 // destructure and store second like into a vaiable named myLike
