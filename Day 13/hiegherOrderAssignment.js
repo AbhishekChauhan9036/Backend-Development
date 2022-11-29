@@ -1,7 +1,9 @@
 // write your own find and findIndex function
 // (Hint: using for loop and if else)
 
-
+const array1 = [5, 12, 8, 130, 44];
+const isLargeNumber = (element) => element > 13;
+console.log(array1.findIndex(isLargeNumber));
 // ======================================================== //
 
 
@@ -18,6 +20,16 @@ const practiceData = [[14,21,23,64], [33,46,51,65]]
  * from the above array, create an array of array of even numbers using a higher order method and for loop
  * solution = [[14,64], [46]]
  */
+let ans=[];
+for(let i=0;i<practiceData.length;i++){
+  for(let j=0;j<practiceData[i].length;j++){
+    function myArr(t){
+      ans=t+1;
+      console.log(ans);
+    }
+
+  }
+}
 
 
 
