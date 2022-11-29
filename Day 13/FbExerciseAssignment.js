@@ -113,7 +113,13 @@ function findFullName(stateName) {
 // ================================== 3 ====================================== //
 
 function getDLStatus(facebookProfiles) {
-  //write your code here
+    const nameArr = [];
+    for (let i = 0; i < facebookProfiles.length; i++) {
+    const { firstName, lastName } = facebookProfiles[i];
+    const fullName = firstName + " " + (lastName || "");
+    nameArr.push(`${fullName}- ${hasDrivingLicense}D/L`);
+    }
+    return nameArr
 }
 
 //3. write a function which returns full names of all people of gurgaon with their driving license status, in an array.
