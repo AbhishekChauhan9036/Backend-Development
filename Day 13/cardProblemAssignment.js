@@ -42,7 +42,6 @@ function findCard(value, suit) {
     }
     return false;
 }
-    
 console.log(findCard(10, "club"))
 
 
@@ -57,12 +56,10 @@ function getSuitsList() {
     for (let index = 0; index < cardData.length; index++) {
     const card = cardData[index];
     const {suit} = card;
-    // this will make sure that duplicates are removed
     suitObject[suit] = 1;
     }
     return Object.keys(suitObject);
 }
-
 console.log(getSuitsList());
 
 
@@ -86,7 +83,6 @@ function getSuitsNumber() {
     }
     return suitObject;
 }
-
 console.log(getSuitsNumber());
 
 // ================================================= 4 ============================================== //
