@@ -57,88 +57,134 @@ const facebookProfiles = [
     },
 ];
 
-// IMPORTANT: SOLVE the following questions using two methods
-// 1. use for loop 
-// 2. USE HIGHER ORDER FUNCTIONS TO SOLVE THE ABOVE QUESTIONS(map, filter, find, forEach etc. )
-
-
-// ==================================== 0 ==================================== //
+// ========================== 0 =========================================== //
 
 function profileLookup(name, property) {
-    //write your code here
+    for (let index = 0; index < facebookProfiles.length; index++) {
+        const profile = facebookProfiles[index];
+        if (profile.firstName === name) {
+            return profile[property] ? profile[property] : "no such property";
+        }
+    }
+
+    return "person does not exist";
 }
 
-// complete the above function such that when it is called with name and property, then it should return its value
-// ex
-// profileLookup("Pritesh", "number"), then it should return his number
+// ==========================1 =========================================== //
 
-// handle edge cases like:
-//      if name is not in the list, return "person does not exist"
-//      if property is not present then return "no such property"
-// 
-// Hint: dynamically access properties using square bracket
-
-// ================================== 1 ====================================== //
-
-function getNamesFromGurgaon(facebookProfiles) {
-    //write your code here
+// method 1
+function getNamesFromGurgaon() {
+    const result = [];
+    for (let index = 0; index < facebookProfiles.length; index++) {
+        const person = facebookProfiles[index];
+        if (person.address.location === "gurgaon") {
+            //Edge case: when last name is not present
+            const name = person.firstName + " " + (person.lastName || "");
+            result.push(name);
+        }
+    }
+    return result;
 }
-//complete the above functin such that it returns the list of full names of all people of gurgaon.
-// ex = ['Jay ', 'Pritesh Kumar']
 
-// ==================================2 ====================================== //
+// method 2
+const fullNames = facebookProfiles
+    .filter((person) => person.address.location === "gurgaon")
+    .map((person) => person.firstName + " " + (person.lastName || ""));
 
+
+console.log(fullNames);
+
+
+
+
+// ============================== 2 ======================================= //
+
+//method 1
+function findName(stateName) {
+    let name = "person not found"
+
+    for (let index = 0; index < facebookProfiles.length; index++) {
+        const person = facebookProfiles[index];
+        const { address, firstName, lastName } = person;
+        if (address.state === stateName) {
+            name = firstName + " " + (lastName || "");
+            break;
+        }
+    }
+
+    return name
+}
+
+
+//method 2
 function findFullName(stateName) {
-    //write your code here
-}
-// 2. complete this function, which takes state name as argument and return the name 
-// of one of its residents
+    const person = facebookProfiles.find(person => person.address.state === stateName);
 
-// ================================== 3 ====================================== //
+    //using ternary
+    return person
+        ? person.firstName + " " + (person.lastName || "")
+        : "person not found";
 
-function getDLStatus(facebookProfiles) {
-    //write your code here
-}
-
-//3. write a function which returns full names of all people of gurgaon with their driving license status, in an array. 
-// like shown in the example below
-// ex = ['Jay - D/L', 'Pritesh Kumar - N D/L']
-
-// =================================== 4 ===================================== //
-
-function getFullName(facebookProfiles) {
-    //write your code here
+    //using if else
+    // if (person) {
+    //   return person.firstName + " " + person.lastName
+    // } else {
+    //   return "person not found"
+    // }
 }
 
-// 4. write a function which returns full names in an array
-//ans = ['Akash Agarwal', 'Pritesh Kumar', 'Sabiha Khan', 'Suyash Kashyap', 'Jay' ]
+// ============================== 4 ======================================= //
 
-
-// ===================================== 5 =================================== //
-
-function getLikes(facebookProfiles) {
-    //write your code here
+function printNamesUpdated() {
+    const nameArr = [];
+    for (let i = 0; i < facebookProfiles.length; i++) {
+        const { firstName, lastName } = facebookProfiles[i];
+        const fullName = firstName + " " + (lastName || "");
+        nameArr.push(fullName);
+    }
+    return nameArr 
 }
 
-// 5. write a function which returns all likes of all the people in an array
-//hint: use spread syntax
-//ans = ['music', 'movies', 'code', 'podcasts', 'travel', 'driving', 'food', 'mobile']
+// ================================5 ===================================== //
 
-// ====================================== 6 ================================== //
+function printLikesUpdated() {
+    let likesArr = [];
+    for (let i = 0; i < facebookProfiles.length; i++) {
+        // edge case: a person doesnt have any likes
+        const likes = facebookProfiles[i].likes || [];
 
-function getNameFromDelhiWithDL(facebookProfiles) {
-    //write your code here
+        // we can use push as well
+        likesArr = [...likesArr, ...likes];
+    }
+    return likesArr;
 }
 
-//6. write a function which return  the name of the any one person who live in delhi and has driving license
-//ans => "no such person"
+// ==============================6 ======================================= //
 
-// ======================================= 7 ================================= //
+function problemSix() {
+    let name = "not found"
+    for (let index = 0; index < facebookProfiles.length; index++) {
+        const person = facebookProfiles[index];
+        if (person.address.location === "delhi" && person.hasDrivingLicense) {
+            name = person.firstName + " " + (person.lastName || "");
+            break
+        }
+    }
 
-function getNameOfDriverWithoutDL(facebookProfiles) {
-    //write your code here
+    return name;
 }
-//7. write a function which return the name of the any one person who like driving but doesnt have driving license
-//asn => pritesh
 
+// ==============================7 ======================================= //
 
+function problemSeven() {
+    let name = "not found"
+    for (let index = 0; index < facebookProfiles.length; index++) {
+        const person = facebookProfiles[index];
+        if (person.likes.includes("driving") && person.hasDrivingLicense === false) {
+            name = person.firstName + " " + (person.lastName || "");
+            break
+        }
+    }
+    
+    return name;
+}

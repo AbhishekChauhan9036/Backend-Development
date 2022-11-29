@@ -20,26 +20,55 @@ const practiceData = [[14,21,23,64], [33,46,51,65]]
  * from the above array, create an array of array of even numbers using a higher order method and for loop
  * solution = [[14,64], [46]]
  */
-let ans=[];
+
+const plusOne = (number) => {
+  return number + 1;  
+};
+
 for(let i=0;i<practiceData.length;i++){
   for(let j=0;j<practiceData[i].length;j++){
-    function myArr(t){
-      ans=t+1;
-      console.log(ans);
-    }
-
+  //  console.log( plusOne(practiceData[i][j]));
   }
 }
+
+
+const isEven = (n) => {
+  return n % 2 == 0;
+}
+
+const evenArray=[];
+for(let i=0;i<practiceData.length;i++){
+  for(let j=0;j<practiceData[i].length;j++){
+   if(isEven(practiceData[i][j])){
+    evenArray.push(practiceData[i][j]);
+   }
+  }
+}
+
+console.log(evenArray);
 
 
 
 // ======================================================== //
 
+  // problem => return an array such that numbers at odd idex are multiplied by 2
+  // and numbers at even index are multiplied by 10
     const array = [23 , 45,467, 789, 34, 989, 56]
+    const indexOddEven = (n) => {
+      if(n % 2 ===0){
+        return 0;
+      }return 1;
+    }
+    const EvenArray2=[];
+    for(let i=0;i<array.length;i++){
+      if(indexOddEven(i)){
+        EvenArray2.push(array[i]*2);
+      }
+      EvenArray2.push(array[i]*10);
+    }
 
-    // problem => return an array such that numbers at odd idex are multiplied by 2
-    // and numbers at even index are multiplied by 10
-
+    console.log(EvenArray2);
+  
 // ======================================================== //
 
 
@@ -48,7 +77,6 @@ for(let i=0;i<practiceData.length;i++){
  const carBrands = ["honda", "toyota", "maruti","tata"]
  const carModel = ["city", "innova", "alto", "nano"]
  
-const carObject = {}
 //  using a higher order method, create a carObject variable such that 
 /**
  * 
@@ -59,7 +87,11 @@ const carObject = {}
  * tata:nano
  * }
  */
- 
+const carObject = {};
+carBrands.forEach((a, i) => {
+carObject[a] = carModel[i];
+});
+console.log(carObject);
  
 // ======================================================== //
 
@@ -69,13 +101,17 @@ const carObject = {}
  Use the reduce method 
  to â€œflattenâ€ an array of arrays into a single array that has all the elements of the original arrays.
  
- const arrays = [[1, 2, 3], [4, 5], [6]];
+
  // result =  [1, 2, 3, 4, 5, 6]
   * 
   * 
   */
-
-
+ const rrArr = [[1, 2, 3], [4, 5], [6]];
+ const neAnswer=rrArr.reduce((a, b) => {
+  a = [...a, ...b]
+  return a;
+  }, [])
+  console.log(neAnswer);
 // ======================================================== //
 
 
@@ -87,7 +123,9 @@ const carObject = {}
   * 
   * 
   */
-
+  const countries = ['Finland', 'Denmark', 'Sweden', 'Norway', 'Iceland']
+  const answercapital= countries.map(item => item.toUpperCase());
+  console.log(answercapital);
 // ======================================================== //
 
 
