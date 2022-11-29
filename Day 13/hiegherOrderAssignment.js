@@ -124,7 +124,7 @@ console.log(carObject);
   * 
   */
   const countries = ['Finland', 'Denmark', 'Sweden', 'Norway', 'Iceland']
-  const answercapital= countries.map(item => item.toUpperCase());
+  const answercapital= countries.map(element => element.toUpperCase());
   console.log(answercapital);
 // ======================================================== //
 
