@@ -1,3 +1,6 @@
+/*Video Link:- https://drive.google.com/file/d/1BKBWuD5-dIxSHSwb0zaPb1Tsiews3b0K/view?usp=sharing */
+
+
 const person = {
     name: "Akash",
     mobile: 999999999,
@@ -23,7 +26,8 @@ personCopy.name = "Rahul";
 personCopy.address.pincode = "4567";
 personCopy.address.emails[0] = "asd@outlook.com";
 
-
+console.log(person);
+console.log(personCopy);
 /**
  * 
  * 
