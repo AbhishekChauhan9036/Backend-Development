@@ -10,6 +10,20 @@ const person = {
 };
 
 
+
+const personCopy = {
+    ...person,
+    address: {
+        ...person.address,
+        emails: [...person.address.emails],
+    },
+};
+
+personCopy.name = "Rahul";
+personCopy.address.pincode = "4567";
+personCopy.address.emails[0] = "asd@outlook.com";
+
+
 /**
  * 
  * 
