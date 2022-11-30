@@ -15,6 +15,17 @@ https://www.codewars.com/kata/5a2be17aee1aaefe2a000151/train/javascript
 https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad/train/javascript*/
 
 // Solution 1............................................................................ 
+function isPalindrome(string) {
+  string =string.toUpperCase();
+ const len = string.length;
+    for (let i = 0; i < len / 2; i++) {
+        if (string[i] !== string[len - 1 - i]) {
+            return false;
+        }
+    }
+    return true;
+}
+
 
 
 // Solution 2............................................................................ 
@@ -76,12 +87,60 @@ var filterString = function(value) {
 
 
 // Solution 7............................................................................ 
+function highAndLow(numbers){
+  numbers=numbers.split(" ")
+  let max = Math.max(...numbers);
+  let min=Math.min(...numbers);
+  return `${max} ${min}`;
+}
+
 
 // Solution 8............................................................................ 
+function findShort(s){
+  let arr=s.split(" ");
+  let min=arr[0].length;
+  for(let i=0;i<arr.length;i++){
+    if(arr[i].length<min){
+      min=arr[i].length;
+    }
+  }
+  return min;
+}
+
 
 // Solution 9............................................................................ 
+function getEvenNumbers(numbersArray){
+  let result = numbersArray.filter((n) => n % 2 == 0);
+  return result;
+}
+
 
 // Solution 10............................................................................ 
+function quickSort(originalArr) {
+  if (originalArr.length <= 1) {
+    return originalArr;
+  } else {
+    var leftArr = [];
+    var rightArr = [];
+    var newArr = [];
+    var pivot = originalArr.pop();
+    var length = originalArr.length;
+    for (var i = 0; i < length; i++) {
+      if (originalArr[i] <= pivot) {
+        leftArr.push(originalArr[i]);
+      } else {
+        rightArr.push(originalArr[i]);
+      }
+    }
+    return newArr.concat(quickSort(leftArr), pivot, quickSort(rightArr));
+  }
+}
+function diffBig2(arr) {
+  let ar = quickSort(arr);
+  return ar[ar.length-1]-ar[ar.length-2];
+}
+
+
 
 // Solution 11............................................................................ 
 
