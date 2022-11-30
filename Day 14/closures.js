@@ -36,6 +36,5 @@ function multFn() {
 }
 
 // Use the closure
-const mult = multFn();
-
-console.log(mult(18));
+const newCall = multFn();
+console.log(newCall(18));

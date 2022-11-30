@@ -36,17 +36,17 @@
 //pass by reference
 
 function PassbyReference(abc) {
-    // by itself it creates a new variable :-- abc = reference of obj
+  // by itself it creates a new variable :-- abc = reference of obj
 
-    abc.a = "new";
-    abc.b = "new2";
+  abc.a = "new";
+  abc.b = "new2";
 
-    console.log("inside func", abc);
+  console.log("inside func", abc);
 }
 
 let obj = {
-    a: 10,
-    b: 20,
+  a: 10,
+  b: 20,
 };
 
 console.log(`Before calling Pass By Reference
