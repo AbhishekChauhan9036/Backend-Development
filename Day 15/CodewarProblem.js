@@ -143,12 +143,68 @@ function diffBig2(arr) {
 
 
 // Solution 11............................................................................ 
+var number=function(array){
+  if (array.length === 0){
+    return [];
+  }
+  let ans=[];
+  for(let i=0;i<array.length;i++){
+    ans.push(i+1+": "+array[i]);
+  }
+  return ans;
+}
+
 
 // Solution 12............................................................................ 
+function makeNegative(num) {
+  if(num===0 || num<0){
+    return num;
+  }
+  return -num;
+}
+
 
 // Solution 13............................................................................ 
+function solve(s){
+  let ans="";
+  let counter=0;
+  let k=s.split('');
+ for(let i=0;i<s.length;i++){
+   if(s[i]>='A' && s[i]<='Z'){
+     counter++;
+   }else if(s[i]>='a' && s[i]<='z'){
+     counter--;
+   }
+ }
+  if(counter>=1){
+    return s.toUpperCase();
+  }
+  return s.toLowerCase();
+}
+
 
 // Solution 14............................................................................ 
+function arrayPlusArray(arr1, arr2) {
+  let sum=0;
+  for(let i=0;i<arr1.length;i++){
+    sum+=arr1[i];
+  } 
+  for(let i=0;i<arr2.length;i++){
+    sum+=arr2[i];
+  }
+  return sum;
+}
 
 
 // Solution 15............................................................................ 
+function invert(array) {
+  let ans=[];
+  for(let i=0;i<array.length;i++){
+    if(array[i]<0){
+      ans.push(Math.abs(array[i]));
+    }else{
+        ans.push(-(Math.abs(array[i])));
+    }
+  }
+  return ans;
+}
