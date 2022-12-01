@@ -1,0 +1,48 @@
+
+Video Solution link 1:-  https://drive.google.com/file/d/1uqkIyAqBHpXmGTRcEL_fwGf9Pp4AgKKO/view?usp=sharing
+Video Solution link 2:-  https://drive.google.com/file/d/1nxVuC7mwyChlf_51OdnJu2W7z1ZucI6p/view?usp=sharing
+
+
+
+1581  cd Desktop
+ 1582  ls
+ 1583  mkdir assignment
+ 1584  ls
+ 1585  cd assignment
+ 1586  cd sourse destination
+ 1587  mkdir sourse destination
+ 1588  ls
+ 1589  cd sourse
+ 1590  touch hello.txt
+ 1591  vim hello.txt
+ 1592  cat hello.txt
+ 1593  pwd
+ 1594  cp -r hello.txt /home/abhishek/Desktop/assignment/destination
+ 1595  cd ..
+ 1596  ls
+ 1597  cd des
+ 1598  cd destination
+ 1599  ls
+ 1600  clear
+ 1601  ls
+ 1602  cd ..
+ 1603  ls
+ 1604  clear
+ 1605  ls
+ 1606  cd destination
+ 1607  ls
+ 1608  rm hello.txt
+ 1609  ls
+ 1610  cd ..
+ 1611  ls
+ 1612  cd sourse
+ 1613  ls
+ 1614  pwd
+ 1615  mv hello.txt /home/abhishek/Desktop/assignment/destination
+ 1616  ls
+ 1617  cd ..
+ 1618  ls
+ 1619  cd destination
+ 1620  ls
+ 1621  cat hello.txt
+ 1622  exit

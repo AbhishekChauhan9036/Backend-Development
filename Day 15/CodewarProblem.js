@@ -1,3 +1,8 @@
+
+// Video Solution Link:- https://drive.google.com/file/d/1YzOMXFceMQn865acKZJyeqqlThhIZXAZ/view?usp=sharing
+
+
+
 /*https://www.codewars.com/kata/57a1fd2ce298a731b20006a4/train/javascript  
 https://www.codewars.com/kata/56b1f01c247c01db92000076/train/javascript (Send explainer video for your code)
 https://www.codewars.com/kata/5866fc43395d9138a7000006/train/javascript
