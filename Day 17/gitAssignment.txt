@@ -1,0 +1,55 @@
+Git Repo link:- https://github.com/AbhishekChauhan9036/backend-test
+Video Link:- https://drive.google.com/file/d/1Du_kFKVbL1jdvlR-n-AudamDUYDr1Jp_/view?usp=sharing
+
+
+terminal Code:-  .........................................................................................
+ 1692  mkdir FunctionUP
+ 1693  cd FunctionUP
+ 1694  git clone git@github.com:sabihak89/californium.git
+ 1695  ls
+ 1696  cd californium
+ 1697  ls
+ 1698  cat README.md
+ 1699  cd ..
+ 1700  ls
+ 1701  cd ..
+ 1702  ls
+ 1703  mkdir backendtest
+ 1704  cd ..
+ 1705  ls
+ 1706  cd Desktop
+ 1707  ls
+ 1708  cd FunctionUP
+ 1709  ls
+ 1710  cd californium
+ 1711  ls
+ 1712  pwd
+ 1713  cp -r README.md /home/abhishek/Desktop/backendtest\n
+ 1714  ls
+ 1715  cd ..
+ 1716  ls
+ 1717  cd backend
+ 1718  cd backendtest
+ 1719  ls
+ 1720  git init
+ 1721  git add -A
+ 1722  git commit -a -m "added new data in github"
+ 1723  git remote add origin git@github.com:AbhishekChauhan9036/backend-test.git
+ 1724  git push -u origin master
+ 1725  history
+ 1726  touch index.js
+ 1727  ls
+ 1728  vim index.js
+ 1729  git add -A
+ 1730  git commit -a -m "js file added"
+ 1731  git push -u origin master
+                                                                                                                
+┌──(abhishek㉿mac)-[~/Desktop/backendtest]
+└─$ date
+Sat Dec  3 04:35:32 PM IST 2022
+                                                                                                                
+┌──(abhishek㉿mac)-[~/Desktop/backendtest]
+└─$ 
+
+
+
