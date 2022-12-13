@@ -1,0 +1,80 @@
+
+Node Js:- Node.js is an open source,cross plateform runtime environment and library to run application 
+outside the client browser It is use to create server side web application. in terminal when i 
+type node --version then you can check what is version of Node.Js.
+
+
+
+Express Js:-Express is a flexible Node.js web application framework that provides a wide set features
+to develop web and mobile applications.
+
+
+
+Author:-Ryan Dahl is the author of Node.js 
+
+
+
+NPM:- Javascript operates in a runtime environment with the help of node js having its own package
+manager, this package manager is called NPM.in terminal when i type npm --version then you can 
+check what is version of npm
+
+
+
+CLI:-command-line interface
+
+
+
+which Language Node Js is written:- Node.js shows compatibility with three types of language 
+C,C++ and JavaScript
+
+
+
+V8 Engine:- In 2008 when google chrome was launched time chrome also introduced its project of
+the V8 engine. It is an open-source network that can be written in the c++ language.
+
+
+
+Module:-Modulus is various commands used in node js to perform tasks like addition, subtraction,
+division, multiplication, etc. Ins short you can do maths in js using modulus.
+
+
+
+Module.exports:-The module. exports is a default application that can be found in every js 
+file of Node js.
+
+
+package.Json:-package.json file is the heart of Node.js system. It is the manifest file of 
+any Node.js project and contains the metadata of the project. The package.json file is the 
+essential part to understand, learn and work with the Node.js. It is the first step to learn 
+about development in Node.js.
+
+
+HTTP:- The Hypertext Transfer Protocol is provide communications between clients and servers.
+
+
+HTTP Methods:-Different Types of http methods available here like get,post,put,delete etc..
+
+
+Get Method:-GET is used to request data from a specified resource.
+
+
+Post Method:-POST is used to send data to a server to create/update a resource.
+
+
+Path Params:-The path parameter is a variable that allows the user to add a parameter in his
+resource point mins API endpoint whose value can be changed. Path parameters offer a unique
+opportunity for the user to control the representations of resources.
+
+
+Query Params:-The query parameter is the variable whose value is passed in the URL in the form 
+of key-value pair at the end of the URL after a question mark (?).
+
+
+LocalHost:-localhost is a special hostname that almost always resolves to 127.0. 0.1
+
+
+Router:-A Router is a networking device that forwards data packets between computer networks.
+
+
+Port Number:-Port number is the part of the addressing information used to identify the senders
+and receivers of messages in computer networking.default port number we're using 3000
