@@ -30,3 +30,13 @@ $nin:
 ● upsert flag in update operations
 ● isDeleted key in mongoose schema
 ● Assignment ( we have not discussed ref and populate yet)
+
+
+..................................Mongodb Day4......................................
+● References
+● Populate
+
+
+..................................Mongodb Day5......................................
+● Aggregation
+● Middleware in Express

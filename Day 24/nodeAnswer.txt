@@ -78,3 +78,7 @@ Router:-A Router is a networking device that forwards data packets between compu
 
 Port Number:-Port number is the part of the addressing information used to identify the senders
 and receivers of messages in computer networking.default port number we're using 3000
+
+
+Population :- In MongoDB, Population is the process of replacing the specified path in the document of 
+one collection with the actual document from the other collection.
